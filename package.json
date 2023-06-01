@@ -1,0 +1,33 @@
+{
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.14.0",
+    "hardhat-deploy": "^0.11.29",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.8.8",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts":{
+    "test":"yarn hardhat test",
+    "test:staging":"yarn hardhat test --network sepolia",
+    "lint":"yarn solhint 'contracts/*.sol'",
+    "lint-fix":"yarn solhint 'contracts/*.sol' --fix",
+    "format":"yarn prettier --write .",
+    "coverage":"yarn hardhat coverage"
+
+  }
+}
